@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../components"
+		},
+		{
+			"path": "../layouts"
+		},
+		{
+			"path": "../lib"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../styles"
+		}
+	]
+}

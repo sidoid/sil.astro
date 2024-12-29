@@ -1,0 +1,62 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>САЛОНЫ СИЛ БЬЮТИ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  
+  <MainLayout>
+    <main class="container mx-auto mt-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+     
+        <div class="col-span-2 bg-white p-6 shadow rounded-lg">
+          <h2 class="text-xl font-bold text-gray-800 mb-4">Сил Бьюти в Москве</h2>
+          <div style="position:relative;overflow:hidden;">
+            <a href="https://yandex.ru/maps/213/moscow/search/%D0%A1%D0%B8%D0%BB%20%D0%91%D1%8C%D1%8E%D1%82%D0%B8/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Сил Бьюти в Москве</a>
+            <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва</a>
+            <iframe src="https://yandex.ru/map-widget/v1/?display-text=%D0%A1%D0%B8%D0%BB%20%D0%91%D1%8C%D1%8E%D1%82%D0%B8&ll=37.539479%2C55.780728&mode=search&sll=37.646929%2C55.725143&sspn=0.641739%2C0.466235&text=chain_id%3A%28184398604216%29&z=12.23" width="100%" height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+        </div>
+
+  
+        <div class="flex flex-col space-y-6">
+          <!-- Ленинградское шоссе -->
+          <a href="viktorenko" class="transform transition duration-300 hover:scale-105">
+            <div class="bg-white p-2 shadow rounded-lg flex flex-col items-center">
+              <img src="vik.jpg" alt="Салон Ленинградское шоссе" class="w-full h-32 object-cover rounded mb-4">
+              <h3 class="text-lg font-semibold text-gray-800">Салон Викторенко</h3>
+              <p class="text-gray-600 text-sm text-center">ул. Викторенко, д. 9, стр. 1, м. Аэропорт</p>
+            </div>
+          </a>
+        
+          <!-- Хамовники -->
+          <a href="/xam" class="transform transition duration-300 hover:scale-105">
+            <div class="bg-white p-2 shadow rounded-lg flex flex-col items-center">
+              <img src="xam.jpg" alt="Салон Хамовники" class="w-full h-32 object-cover rounded mb-4">
+              <h3 class="text-lg font-semibold text-gray-800">Салон Хамовники</h3>
+              <p class="text-gray-600 text-sm text-center">ул. Трубецкая, д. 28, стр. 1, м. Фрунзенская</p>
+            </div>
+          </a>
+        
+          <!-- Викторенко -->
+          <a href="/novodmitrovka" class="transform transition duration-300 hover:scale-105">
+            <div class="bg-white p-2 shadow rounded-lg flex flex-col items-center">
+              <img src="novo.jpg" alt="Салон Викторенко" class="w-full h-32 object-cover rounded mb-4">
+              <h3 class="text-lg font-semibold text-gray-800">Салон Новодмитровская</h3>
+              <p class="text-gray-600 text-sm text-center">Новодмитровская, д.2, к.6, м. Дмитровская</p>
+            </div>
+          </a>
+        </div>
+        
+    </main>
+  </MainLayout>
+
+</body>
+</html>

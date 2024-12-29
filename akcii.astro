@@ -1,0 +1,113 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro"
+---
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СИЛ БЬЮТИ - Акции</title>
+ 
+  <style> 
+    <
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #000;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    .card-link {
+      font-size: 0.9rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #007bff;
+      display: inline-block;
+    }
+
+    .card-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body> <MainLayout>
+  <div class="container">
+    <div class="card">
+      <img src="akcii.jpg" alt="Акция 1">
+      <div class="card-content">
+        <h3 class="card-title">Знакомство с SIL!</h3>
+        <p class="card-text">Дарим подарок при первом визите в наш новый салон.</p>
+        <!--<a href="#" class="card-link">Подробнее →</a>-->
+      </div>
+    </div>
+    <div class="card">
+      <img src="tokio.jpeg" alt="Акция 2">
+      <div class="card-content">
+        <h3 class="card-title">Tokio Inkarami</h3>
+        <p class="card-text">Восстановление волос  №1 в мире.</p>
+       <!-- <a href="#" class="card-link">Подробнее →</a>-->
+      </div>
+    </div>
+    <div class="card">
+      <img src="xamam.jpg" alt="Акция 3">
+      <div class="card-content">
+        <h3 class="card-title">СПА-Уход в Хаммам </h3>
+        <p class="card-text">На французкой марке La Sultan De Saba</p>
+        <!--<<a href="#" class="card-link">Подробнее →</a>-->
+      </div>
+    </div>
+    <!-- Добавьте больше карточек по аналогии -->
+  </div>
+</MainLayout>
+</body>
+</html>
